@@ -1,0 +1,110 @@
+body {
+  font-size: 14px;
+}
+
+.center {
+  flex-direction: column;
+}
+
+.auth {
+  width: 90%;
+  max-width: 400px;
+  border: 1px solid #dcdcdc;
+  padding: 20px;
+  text-align: center;
+}
+.auth form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin: 0 auto 10px auto;
+}
+.auth form > input, .auth form button {
+  height: 40px;
+  font-size: 16px;
+  padding: 0 10px;
+}
+.auth form label {
+  display: inline-flex;
+}
+
+h1 {
+  font-weight: 400;
+  font-size: 1.8rem;
+  text-transform: capitalize;
+  margin-top: 0;
+}
+
+.bottom-info {
+  font-size: 0.8rem;
+  letter-spacing: 1px;
+  display: inline-flex;
+}
+.bottom-info a {
+  text-decoration: none;
+  margin-left: 4px;
+  color: #888;
+}
+
+.row {
+  display: inline-flex;
+  justify-content: flex-start;
+  align-items: center;
+  font-size: 1rem;
+  width: 100%;
+}
+.row span {
+  width: 110px;
+  text-align: left;
+  font-weight: 500;
+}
+.row + .row {
+  margin-top: 8px;
+}
+.row + button {
+  margin-top: 24px;
+}
+
+.auth__success {
+  padding: 10px 0;
+  background-color: hsl(147, 79%, 87%);
+  margin-bottom: 20px;
+}
+
+.auth__error {
+  padding: 10px 0;
+  background-color: hsl(0, 79%, 87%);
+  margin-bottom: 20px;
+}
+
+.with-love {
+  font-size: 0.8rem;
+  line-height: 1.4;
+  display: inline-flex;
+  align-items: center;
+  width: 400px;
+  color: #888;
+  text-decoration: none;
+  justify-content: center;
+  padding: 4px 20px 0 20px;
+  animation-name: love;
+  animation-duration: 12s;
+}
+.with-love label {
+  letter-spacing: 1px;
+  pointer-events: none;
+}
+.with-love label + svg {
+  margin-left: 4px;
+  pointer-events: none;
+  fill: #ea4335;
+}
+
+@keyframes love {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}/*# sourceMappingURL=forms.css.map */
